@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B745B092A4DB4E547A0663C /* Pods_MyMiniMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD220BD71CF7D7E54199782 /* Pods_MyMiniMap.framework */; };
+		7B06C56523262B56008F6283 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B06C56423262B56008F6283 /* Post.swift */; };
+		7B06C56823265E58008F6283 /* SearchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B06C56723265E58008F6283 /* SearchUser.swift */; };
+		7B3A958D2328F2F000A92AF0 /* SEQ_OwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3A958C2328F2F000A92AF0 /* SEQ_OwnerViewController.swift */; };
+		7B52C76622F40F5400124788 /* MiniMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B52C76522F40F5400124788 /* MiniMapViewController.swift */; };
+		7B52C78722F4206300124788 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B52C78222F4206300124788 /* profile.png */; };
+		7B52C78822F4206300124788 /* minimap.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B52C78322F4206300124788 /* minimap.png */; };
+		7B52C78922F4206300124788 /* alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B52C78422F4206300124788 /* alarm.png */; };
+		7B52C78A22F4206300124788 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B52C78522F4206300124788 /* search.png */; };
+		7B52C78B22F4206300124788 /* mymap.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B52C78622F4206300124788 /* mymap.png */; };
+		7B52C78D22F4357F00124788 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B52C78C22F4357F00124788 /* SearchResultsController.swift */; };
+		7B52C78F22F43FE400124788 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B52C78E22F43FE400124788 /* test.swift */; };
+		7B78EC5722D83FFC00E97F27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78EC5622D83FFC00E97F27 /* AppDelegate.swift */; };
+		7B78EC5922D83FFC00E97F27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78EC5822D83FFC00E97F27 /* ViewController.swift */; };
+		7B78EC5E22D83FFE00E97F27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B78EC5D22D83FFE00E97F27 /* Assets.xcassets */; };
+		7B78EC6122D83FFE00E97F27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B78EC5F22D83FFE00E97F27 /* LaunchScreen.storyboard */; };
+		7B78EC6C22D83FFE00E97F27 /* MyMiniMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78EC6B22D83FFE00E97F27 /* MyMiniMapTests.swift */; };
+		7B78EC7722D83FFE00E97F27 /* MyMiniMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78EC7622D83FFE00E97F27 /* MyMiniMapUITests.swift */; };
+		7BB8359522FD34DD001FC748 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB8359322FD34DC001FC748 /* Main.storyboard */; };
+		7BB8359722FD359B001FC748 /* test1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB8359622FD359B001FC748 /* test1.swift */; };
+		7BB8359922FE7687001FC748 /* SaveRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB8359822FE7687001FC748 /* SaveRestaurantViewController.swift */; };
+		7BBBA72722F16495008CF86C /* MiniMapLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBBA72622F16495008CF86C /* MiniMapLogo.png */; };
+		7BBBA72922F1867A008CF86C /* UserJoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBBA72822F1867A008CF86C /* UserJoinController.swift */; };
+		7BE2CF6E2321FFF100FF8767 /* verticalEllipsis.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE2CF6D2321FFF100FF8767 /* verticalEllipsis.png */; };
+		7BE2CF71232201F900FF8767 /* like.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE2CF6F232201F800FF8767 /* like.png */; };
+		7BE2CF72232201F900FF8767 /* unlike.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE2CF70232201F800FF8767 /* unlike.png */; };
+		7BE2CF742322037A00FF8767 /* pen.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE2CF732322037A00FF8767 /* pen.png */; };
+		7BE2CF78232207F600FF8767 /* TimeLineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE2CF77232207F600FF8767 /* TimeLineTableViewController.swift */; };
+		7BE2CF7A23220CF800FF8767 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE2CF7923220CF800FF8767 /* pin.png */; };
+		7BECFCC92309118200C86714 /* MyFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BECFCC82309118200C86714 /* MyFeedViewController.swift */; };
+		7BECFCCB230A42F400C86714 /* FeedContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BECFCCA230A42F400C86714 /* FeedContainerViewController.swift */; };
+		7BECFCCD230A504800C86714 /* MapContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BECFCCC230A504800C86714 /* MapContainerViewController.swift */; };
+		7BECFD85230A6A8C00C86714 /* FullFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BECFD84230A6A8C00C86714 /* FullFeedViewController.swift */; };
+		7BECFD88230A7B3900C86714 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BECFD86230A7B3900C86714 /* ItemCollectionViewCell.swift */; };
+		7BECFD89230A7B3900C86714 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BECFD87230A7B3900C86714 /* ItemCollectionViewCell.xib */; };
+		7BECFD8B230E643900C86714 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BECFD8A230E643900C86714 /* SearchViewController.swift */; };
+		7BECFD8D230E654A00C86714 /* SearchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BECFD8C230E654A00C86714 /* SearchTableCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B78EC6822D83FFE00E97F27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B78EC4B22D83FFC00E97F27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B78EC5222D83FFC00E97F27;
+			remoteInfo = MyMiniMap;
+		};
+		7B78EC7322D83FFE00E97F27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B78EC4B22D83FFC00E97F27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B78EC5222D83FFC00E97F27;
+			remoteInfo = MyMiniMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5CEA7D0F6D4C96DCD3DDD837 /* Pods-MyMiniMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMiniMap.debug.xcconfig"; path = "Target Support Files/Pods-MyMiniMap/Pods-MyMiniMap.debug.xcconfig"; sourceTree = "<group>"; };
+		7B06C56423262B56008F6283 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		7B06C56723265E58008F6283 /* SearchUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUser.swift; sourceTree = "<group>"; };
+		7B3A958C2328F2F000A92AF0 /* SEQ_OwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEQ_OwnerViewController.swift; sourceTree = "<group>"; };
+		7B52C76522F40F5400124788 /* MiniMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMapViewController.swift; sourceTree = "<group>"; };
+		7B52C78222F4206300124788 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profile.png; path = "../../../../../Desktop/미니맵 이미지/아이콘/profile.png"; sourceTree = "<group>"; };
+		7B52C78322F4206300124788 /* minimap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = minimap.png; path = "../../../../../Desktop/미니맵 이미지/아이콘/minimap.png"; sourceTree = "<group>"; };
+		7B52C78422F4206300124788 /* alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alarm.png; path = "../../../../../Desktop/미니맵 이미지/아이콘/alarm.png"; sourceTree = "<group>"; };
+		7B52C78522F4206300124788 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = search.png; path = "../../../../../Desktop/미니맵 이미지/아이콘/search.png"; sourceTree = "<group>"; };
+		7B52C78622F4206300124788 /* mymap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mymap.png; path = "../../../../../Desktop/미니맵 이미지/아이콘/mymap.png"; sourceTree = "<group>"; };
+		7B52C78C22F4357F00124788 /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
+		7B52C78E22F43FE400124788 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		7B78EC5322D83FFC00E97F27 /* MyMiniMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMiniMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B78EC5622D83FFC00E97F27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7B78EC5822D83FFC00E97F27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B78EC5D22D83FFE00E97F27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B78EC6022D83FFE00E97F27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B78EC6222D83FFE00E97F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B78EC6722D83FFE00E97F27 /* MyMiniMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMiniMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B78EC6B22D83FFE00E97F27 /* MyMiniMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMiniMapTests.swift; sourceTree = "<group>"; };
+		7B78EC6D22D83FFE00E97F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B78EC7222D83FFE00E97F27 /* MyMiniMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMiniMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B78EC7622D83FFE00E97F27 /* MyMiniMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMiniMapUITests.swift; sourceTree = "<group>"; };
+		7B78EC7822D83FFE00E97F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BB8359422FD34DC001FC748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MyMiniMap/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BB8359622FD359B001FC748 /* test1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test1.swift; sourceTree = "<group>"; };
+		7BB8359822FE7687001FC748 /* SaveRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveRestaurantViewController.swift; sourceTree = "<group>"; };
+		7BBBA72622F16495008CF86C /* MiniMapLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MiniMapLogo.png; sourceTree = "<group>"; };
+		7BBBA72822F1867A008CF86C /* UserJoinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJoinController.swift; sourceTree = "<group>"; };
+		7BE2CF6D2321FFF100FF8767 /* verticalEllipsis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = verticalEllipsis.png; sourceTree = "<group>"; };
+		7BE2CF6F232201F800FF8767 /* like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like.png; sourceTree = "<group>"; };
+		7BE2CF70232201F800FF8767 /* unlike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlike.png; sourceTree = "<group>"; };
+		7BE2CF732322037A00FF8767 /* pen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pen.png; sourceTree = "<group>"; };
+		7BE2CF77232207F600FF8767 /* TimeLineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewController.swift; sourceTree = "<group>"; };
+		7BE2CF7923220CF800FF8767 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
+		7BECFCC82309118200C86714 /* MyFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFeedViewController.swift; sourceTree = "<group>"; };
+		7BECFCCA230A42F400C86714 /* FeedContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedContainerViewController.swift; sourceTree = "<group>"; };
+		7BECFCCC230A504800C86714 /* MapContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerViewController.swift; sourceTree = "<group>"; };
+		7BECFD84230A6A8C00C86714 /* FullFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullFeedViewController.swift; sourceTree = "<group>"; };
+		7BECFD86230A7B3900C86714 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		7BECFD87230A7B3900C86714 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		7BECFD8A230E643900C86714 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = ../SearchViewController.swift; sourceTree = "<group>"; };
+		7BECFD8C230E654A00C86714 /* SearchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableCell.swift; sourceTree = "<group>"; };
+		B5004A048FD33600F6C700FD /* Pods-MyMiniMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMiniMap.release.xcconfig"; path = "Target Support Files/Pods-MyMiniMap/Pods-MyMiniMap.release.xcconfig"; sourceTree = "<group>"; };
+		EDD220BD71CF7D7E54199782 /* Pods_MyMiniMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMiniMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B78EC5022D83FFC00E97F27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B745B092A4DB4E547A0663C /* Pods_MyMiniMap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B78EC6422D83FFE00E97F27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B78EC6F22D83FFE00E97F27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B06C56123261D2D008F6283 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B06C56423262B56008F6283 /* Post.swift */,
+				7B06C56723265E58008F6283 /* SearchUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7B06C56623265367008F6283 /* 쓰레기통 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "쓰레기통";
+			path = "쓰레기통";
+			sourceTree = "<group>";
+		};
+		7B52C76722F41EA600124788 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				7BE2CF7923220CF800FF8767 /* pin.png */,
+				7BE2CF732322037A00FF8767 /* pen.png */,
+				7BE2CF6F232201F800FF8767 /* like.png */,
+				7BE2CF70232201F800FF8767 /* unlike.png */,
+				7BE2CF6D2321FFF100FF8767 /* verticalEllipsis.png */,
+				7B52C78422F4206300124788 /* alarm.png */,
+				7B52C78322F4206300124788 /* minimap.png */,
+				7B52C78622F4206300124788 /* mymap.png */,
+				7B52C78222F4206300124788 /* profile.png */,
+				7B52C78522F4206300124788 /* search.png */,
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
+		7B78EC4A22D83FFC00E97F27 = {
+			isa = PBXGroup;
+			children = (
+				7B06C56623265367008F6283 /* 쓰레기통 */,
+				7B78EC5522D83FFC00E97F27 /* MyMiniMap */,
+				7B78EC6A22D83FFE00E97F27 /* MyMiniMapTests */,
+				7B78EC7522D83FFE00E97F27 /* MyMiniMapUITests */,
+				7B78EC5422D83FFC00E97F27 /* Products */,
+				F699A921EAE72C94BCA2BEDD /* Pods */,
+				9A8B31D41D0D9DD4A3CCD9EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7B78EC5422D83FFC00E97F27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B78EC5322D83FFC00E97F27 /* MyMiniMap.app */,
+				7B78EC6722D83FFE00E97F27 /* MyMiniMapTests.xctest */,
+				7B78EC7222D83FFE00E97F27 /* MyMiniMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B78EC5522D83FFC00E97F27 /* MyMiniMap */ = {
+			isa = PBXGroup;
+			children = (
+				7B06C56123261D2D008F6283 /* Models */,
+				7BE2CF682321FE4C00FF8767 /* Views */,
+				7B52C76722F41EA600124788 /* Icon */,
+				7BBBA72522F1648A008CF86C /* Image */,
+				7B78EC5622D83FFC00E97F27 /* AppDelegate.swift */,
+				7B78EC5822D83FFC00E97F27 /* ViewController.swift */,
+				7BBBA72822F1867A008CF86C /* UserJoinController.swift */,
+				7B52C76522F40F5400124788 /* MiniMapViewController.swift */,
+				7B52C78C22F4357F00124788 /* SearchResultsController.swift */,
+				7BB8359822FE7687001FC748 /* SaveRestaurantViewController.swift */,
+				7BECFCC82309118200C86714 /* MyFeedViewController.swift */,
+				7BECFCCC230A504800C86714 /* MapContainerViewController.swift */,
+				7BECFCCA230A42F400C86714 /* FeedContainerViewController.swift */,
+				7B78EC5D22D83FFE00E97F27 /* Assets.xcassets */,
+				7BB8359322FD34DC001FC748 /* Main.storyboard */,
+				7B78EC5F22D83FFE00E97F27 /* LaunchScreen.storyboard */,
+				7B78EC6222D83FFE00E97F27 /* Info.plist */,
+				7B52C78E22F43FE400124788 /* test.swift */,
+				7BB8359622FD359B001FC748 /* test1.swift */,
+				7BECFD84230A6A8C00C86714 /* FullFeedViewController.swift */,
+				7BECFD86230A7B3900C86714 /* ItemCollectionViewCell.swift */,
+				7BECFD87230A7B3900C86714 /* ItemCollectionViewCell.xib */,
+				7BECFD8A230E643900C86714 /* SearchViewController.swift */,
+				7BECFD8C230E654A00C86714 /* SearchTableCell.swift */,
+				7BE2CF77232207F600FF8767 /* TimeLineTableViewController.swift */,
+				7B3A958C2328F2F000A92AF0 /* SEQ_OwnerViewController.swift */,
+			);
+			path = MyMiniMap;
+			sourceTree = "<group>";
+		};
+		7B78EC6A22D83FFE00E97F27 /* MyMiniMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B78EC6B22D83FFE00E97F27 /* MyMiniMapTests.swift */,
+				7B78EC6D22D83FFE00E97F27 /* Info.plist */,
+			);
+			path = MyMiniMapTests;
+			sourceTree = "<group>";
+		};
+		7B78EC7522D83FFE00E97F27 /* MyMiniMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7B78EC7622D83FFE00E97F27 /* MyMiniMapUITests.swift */,
+				7B78EC7822D83FFE00E97F27 /* Info.plist */,
+			);
+			path = MyMiniMapUITests;
+			sourceTree = "<group>";
+		};
+		7BBBA72522F1648A008CF86C /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				7BBBA72622F16495008CF86C /* MiniMapLogo.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		7BE2CF682321FE4C00FF8767 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A8B31D41D0D9DD4A3CCD9EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDD220BD71CF7D7E54199782 /* Pods_MyMiniMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F699A921EAE72C94BCA2BEDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CEA7D0F6D4C96DCD3DDD837 /* Pods-MyMiniMap.debug.xcconfig */,
+				B5004A048FD33600F6C700FD /* Pods-MyMiniMap.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B78EC5222D83FFC00E97F27 /* MyMiniMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B78EC7B22D83FFE00E97F27 /* Build configuration list for PBXNativeTarget "MyMiniMap" */;
+			buildPhases = (
+				6520B5F5A9A5E640901FC8E8 /* [CP] Check Pods Manifest.lock */,
+				7B78EC4F22D83FFC00E97F27 /* Sources */,
+				7B78EC5022D83FFC00E97F27 /* Frameworks */,
+				7B78EC5122D83FFC00E97F27 /* Resources */,
+				C2D00ECDC46ABFBB83086DE1 /* [CP] Copy Pods Resources */,
+				9BCAC6E3D0107F195E07B2BA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyMiniMap;
+			productName = MyMiniMap;
+			productReference = 7B78EC5322D83FFC00E97F27 /* MyMiniMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B78EC6622D83FFE00E97F27 /* MyMiniMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B78EC7E22D83FFE00E97F27 /* Build configuration list for PBXNativeTarget "MyMiniMapTests" */;
+			buildPhases = (
+				7B78EC6322D83FFE00E97F27 /* Sources */,
+				7B78EC6422D83FFE00E97F27 /* Frameworks */,
+				7B78EC6522D83FFE00E97F27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B78EC6922D83FFE00E97F27 /* PBXTargetDependency */,
+			);
+			name = MyMiniMapTests;
+			productName = MyMiniMapTests;
+			productReference = 7B78EC6722D83FFE00E97F27 /* MyMiniMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B78EC7122D83FFE00E97F27 /* MyMiniMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B78EC8122D83FFE00E97F27 /* Build configuration list for PBXNativeTarget "MyMiniMapUITests" */;
+			buildPhases = (
+				7B78EC6E22D83FFE00E97F27 /* Sources */,
+				7B78EC6F22D83FFE00E97F27 /* Frameworks */,
+				7B78EC7022D83FFE00E97F27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B78EC7422D83FFE00E97F27 /* PBXTargetDependency */,
+			);
+			name = MyMiniMapUITests;
+			productName = MyMiniMapUITests;
+			productReference = 7B78EC7222D83FFE00E97F27 /* MyMiniMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B78EC4B22D83FFC00E97F27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "TaeHwan Kim";
+				TargetAttributes = {
+					7B78EC5222D83FFC00E97F27 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					7B78EC6622D83FFE00E97F27 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 7B78EC5222D83FFC00E97F27;
+					};
+					7B78EC7122D83FFE00E97F27 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 7B78EC5222D83FFC00E97F27;
+					};
+				};
+			};
+			buildConfigurationList = 7B78EC4E22D83FFC00E97F27 /* Build configuration list for PBXProject "MyMiniMap" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B78EC4A22D83FFC00E97F27;
+			productRefGroup = 7B78EC5422D83FFC00E97F27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B78EC5222D83FFC00E97F27 /* MyMiniMap */,
+				7B78EC6622D83FFE00E97F27 /* MyMiniMapTests */,
+				7B78EC7122D83FFE00E97F27 /* MyMiniMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B78EC5122D83FFC00E97F27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE2CF7A23220CF800FF8767 /* pin.png in Resources */,
+				7B78EC6122D83FFE00E97F27 /* LaunchScreen.storyboard in Resources */,
+				7B52C78922F4206300124788 /* alarm.png in Resources */,
+				7BE2CF72232201F900FF8767 /* unlike.png in Resources */,
+				7B52C78B22F4206300124788 /* mymap.png in Resources */,
+				7BECFD89230A7B3900C86714 /* ItemCollectionViewCell.xib in Resources */,
+				7BE2CF742322037A00FF8767 /* pen.png in Resources */,
+				7B78EC5E22D83FFE00E97F27 /* Assets.xcassets in Resources */,
+				7B52C78A22F4206300124788 /* search.png in Resources */,
+				7BBBA72722F16495008CF86C /* MiniMapLogo.png in Resources */,
+				7BB8359522FD34DD001FC748 /* Main.storyboard in Resources */,
+				7B52C78822F4206300124788 /* minimap.png in Resources */,
+				7BE2CF71232201F900FF8767 /* like.png in Resources */,
+				7BE2CF6E2321FFF100FF8767 /* verticalEllipsis.png in Resources */,
+				7B52C78722F4206300124788 /* profile.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B78EC6522D83FFE00E97F27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B78EC7022D83FFE00E97F27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6520B5F5A9A5E640901FC8E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyMiniMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BCAC6E3D0107F195E07B2BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyMiniMap/Pods-MyMiniMap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyMiniMap/Pods-MyMiniMap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyMiniMap/Pods-MyMiniMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2D00ECDC46ABFBB83086DE1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyMiniMap/Pods-MyMiniMap-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyMiniMap/Pods-MyMiniMap-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyMiniMap/Pods-MyMiniMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B78EC4F22D83FFC00E97F27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B52C76622F40F5400124788 /* MiniMapViewController.swift in Sources */,
+				7BB8359722FD359B001FC748 /* test1.swift in Sources */,
+				7BECFD8D230E654A00C86714 /* SearchTableCell.swift in Sources */,
+				7B52C78F22F43FE400124788 /* test.swift in Sources */,
+				7BBBA72922F1867A008CF86C /* UserJoinController.swift in Sources */,
+				7BECFCCD230A504800C86714 /* MapContainerViewController.swift in Sources */,
+				7BECFCCB230A42F400C86714 /* FeedContainerViewController.swift in Sources */,
+				7BECFCC92309118200C86714 /* MyFeedViewController.swift in Sources */,
+				7B3A958D2328F2F000A92AF0 /* SEQ_OwnerViewController.swift in Sources */,
+				7BB8359922FE7687001FC748 /* SaveRestaurantViewController.swift in Sources */,
+				7BECFD8B230E643900C86714 /* SearchViewController.swift in Sources */,
+				7B78EC5922D83FFC00E97F27 /* ViewController.swift in Sources */,
+				7BECFD85230A6A8C00C86714 /* FullFeedViewController.swift in Sources */,
+				7BE2CF78232207F600FF8767 /* TimeLineTableViewController.swift in Sources */,
+				7B52C78D22F4357F00124788 /* SearchResultsController.swift in Sources */,
+				7B06C56823265E58008F6283 /* SearchUser.swift in Sources */,
+				7B06C56523262B56008F6283 /* Post.swift in Sources */,
+				7B78EC5722D83FFC00E97F27 /* AppDelegate.swift in Sources */,
+				7BECFD88230A7B3900C86714 /* ItemCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B78EC6322D83FFE00E97F27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B78EC6C22D83FFE00E97F27 /* MyMiniMapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B78EC6E22D83FFE00E97F27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B78EC7722D83FFE00E97F27 /* MyMiniMapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B78EC6922D83FFE00E97F27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B78EC5222D83FFC00E97F27 /* MyMiniMap */;
+			targetProxy = 7B78EC6822D83FFE00E97F27 /* PBXContainerItemProxy */;
+		};
+		7B78EC7422D83FFE00E97F27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B78EC5222D83FFC00E97F27 /* MyMiniMap */;
+			targetProxy = 7B78EC7322D83FFE00E97F27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B78EC5F22D83FFE00E97F27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B78EC6022D83FFE00E97F27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7BB8359322FD34DC001FC748 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BB8359422FD34DC001FC748 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B78EC7922D83FFE00E97F27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B78EC7A22D83FFE00E97F27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B78EC7C22D83FFE00E97F27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CEA7D0F6D4C96DCD3DDD837 /* Pods-MyMiniMap.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44S7AB9YW6;
+				INFOPLIST_FILE = MyMiniMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myminimap.login.MyMiniMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B78EC7D22D83FFE00E97F27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5004A048FD33600F6C700FD /* Pods-MyMiniMap.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44S7AB9YW6;
+				INFOPLIST_FILE = MyMiniMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myminimap.login.MyMiniMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7B78EC7F22D83FFE00E97F27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyMiniMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myminimap.login.MyMiniMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyMiniMap.app/MyMiniMap";
+			};
+			name = Debug;
+		};
+		7B78EC8022D83FFE00E97F27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyMiniMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myminimap.login.MyMiniMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyMiniMap.app/MyMiniMap";
+			};
+			name = Release;
+		};
+		7B78EC8222D83FFE00E97F27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyMiniMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myminimap.login.MyMiniMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyMiniMap;
+			};
+			name = Debug;
+		};
+		7B78EC8322D83FFE00E97F27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyMiniMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myminimap.login.MyMiniMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyMiniMap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B78EC4E22D83FFC00E97F27 /* Build configuration list for PBXProject "MyMiniMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B78EC7922D83FFE00E97F27 /* Debug */,
+				7B78EC7A22D83FFE00E97F27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B78EC7B22D83FFE00E97F27 /* Build configuration list for PBXNativeTarget "MyMiniMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B78EC7C22D83FFE00E97F27 /* Debug */,
+				7B78EC7D22D83FFE00E97F27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B78EC7E22D83FFE00E97F27 /* Build configuration list for PBXNativeTarget "MyMiniMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B78EC7F22D83FFE00E97F27 /* Debug */,
+				7B78EC8022D83FFE00E97F27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B78EC8122D83FFE00E97F27 /* Build configuration list for PBXNativeTarget "MyMiniMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B78EC8222D83FFE00E97F27 /* Debug */,
+				7B78EC8322D83FFE00E97F27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B78EC4B22D83FFC00E97F27 /* Project object */;
+}
