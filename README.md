@@ -31,26 +31,18 @@
 - 데이터 베이스 설계도
 ![데이터베이스](http://112.149.7.38:8090/Final_Minimap/php/minidb.png)
 - <h3>메인 기능 소개</h3>
-  - 메인 화면 <br>
-![기능1](http://112.149.7.38:8090/Final_Minimap/php/main.gif)
+  - 로그인 <br>
+![기능1](http://112.149.7.38:8090/Final_Minimap/php/mj.gif)
+  - 저장 <br>
+![기능2](http://112.149.7.38:8090/Final_Minimap/php/ms.gif)
+  - 타임라인 및 사용자 검색 <br>
+![기능3](http://112.149.7.38:8090/Final_Minimap/php/msearch.gif)
 
-    * 사용자들이 저장한 음식점(핀) 정보(음식 종류, 맛, 가격, 추천 메뉴 등)
-  - 회원가입 <br>
-![기능2](http://112.149.7.38:8090/Final_Minimap/php/join.gif)
-
-    * AJAX 이용하여 닉네임, Email 중복 확인 및 이메일 발송
-  - 음식점 저장 <br>
-![기능3](http://112.149.7.38:8090/Final_Minimap/php/save.gif)
-
-    * Apache library 이용한 멀티 파일 업로드 및, 음식점 정보 저장
-  - 자동완성 검색 및 프로필 사진 업로드 <br>
-![기능4](http://112.149.7.38:8090/Final_Minimap/php/profile.gif)
-  - 개인 피드 <br>
-<img src="http://112.149.7.38:8090/Final_Minimap/php/feed.png" width="500" height="500"><br>
-  - 개인 피드 맵 <br>
-<img src="http://112.149.7.38:8090/Final_Minimap/php/feedmap.png" width="500" height="500"><br>
-  - 개인 팔로워 <br>
-<img src="http://112.149.7.38:8090/Final_Minimap/php/feedfollwer.png" width="500" height="500"><br>
+  - 내피드(지도) <br>
+![기능4](http://112.149.7.38:8090/Final_Minimap/php/mfm.gif)
+  - 내피드(피드) <br>
+![기능4](http://112.149.7.38:8090/Final_Minimap/php/mf.gif)
 
 - 참고 사항 <br>
-  - a로 시작되는 java class, jsp 파일은 Android 통신용 입니다.(ajax.jsp 제외)
+  - 아직 진행중인 프로젝트입니다.
+  - 통신하는 JSP 파일은 서버에 있습니다.
