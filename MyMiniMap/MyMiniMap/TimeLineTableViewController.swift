@@ -47,7 +47,7 @@ class TimeLineTableViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        SearchView.isHidden = true
         let request = NSMutableURLRequest(url: NSURL(string: "http://112.149.7.38:8090/Final_Minimap/Ios/NewsFeed.jsp")! as URL)
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "POST"
@@ -181,9 +181,9 @@ extension TimeLineTableViewController : UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if tableView == FeedView {
-            return 600
+            return 350
         }else {
-            return 100
+            return 65
         }
 
     }
@@ -195,6 +195,7 @@ extension TimeLineTableViewController: UISearchBarDelegate {
         print("검색 시작")
         self.searchBar.showsCancelButton = true
         FeedView.isHidden = true
+        SearchView.isHidden = false
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
@@ -203,6 +204,7 @@ extension TimeLineTableViewController: UISearchBarDelegate {
         self.searchBar.text = ""
         self.searchBar.resignFirstResponder()
         FeedView.isHidden = false
+        SearchView.isHidden = true
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

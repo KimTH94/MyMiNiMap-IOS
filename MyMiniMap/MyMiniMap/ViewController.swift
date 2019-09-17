@@ -83,6 +83,8 @@ class ViewController: UIViewController {
         email.borderStyle = UITextField.BorderStyle.roundedRect
         password.borderStyle = UITextField.BorderStyle.roundedRect
         btnLogin.layer.cornerRadius = 7
+        email.text = "kovo1234@naver.com"
+        password.text = "1234"
     }
     
     override func didReceiveMemoryWarning() {

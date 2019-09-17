@@ -37,13 +37,9 @@
 		7BE2CF78232207F600FF8767 /* TimeLineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE2CF77232207F600FF8767 /* TimeLineTableViewController.swift */; };
 		7BE2CF7A23220CF800FF8767 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE2CF7923220CF800FF8767 /* pin.png */; };
 		7BECFCC92309118200C86714 /* MyFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BECFCC82309118200C86714 /* MyFeedViewController.swift */; };
-		7BECFCCB230A42F400C86714 /* FeedContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BECFCCA230A42F400C86714 /* FeedContainerViewController.swift */; };
-		7BECFCCD230A504800C86714 /* MapContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BECFCCC230A504800C86714 /* MapContainerViewController.swift */; };
 		7BECFD85230A6A8C00C86714 /* FullFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BECFD84230A6A8C00C86714 /* FullFeedViewController.swift */; };
 		7BECFD88230A7B3900C86714 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BECFD86230A7B3900C86714 /* ItemCollectionViewCell.swift */; };
 		7BECFD89230A7B3900C86714 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BECFD87230A7B3900C86714 /* ItemCollectionViewCell.xib */; };
-		7BECFD8B230E643900C86714 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BECFD8A230E643900C86714 /* SearchViewController.swift */; };
-		7BECFD8D230E654A00C86714 /* SearchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BECFD8C230E654A00C86714 /* SearchTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,13 +96,9 @@
 		7BE2CF77232207F600FF8767 /* TimeLineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewController.swift; sourceTree = "<group>"; };
 		7BE2CF7923220CF800FF8767 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
 		7BECFCC82309118200C86714 /* MyFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFeedViewController.swift; sourceTree = "<group>"; };
-		7BECFCCA230A42F400C86714 /* FeedContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedContainerViewController.swift; sourceTree = "<group>"; };
-		7BECFCCC230A504800C86714 /* MapContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerViewController.swift; sourceTree = "<group>"; };
 		7BECFD84230A6A8C00C86714 /* FullFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullFeedViewController.swift; sourceTree = "<group>"; };
 		7BECFD86230A7B3900C86714 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		7BECFD87230A7B3900C86714 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
-		7BECFD8A230E643900C86714 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = ../SearchViewController.swift; sourceTree = "<group>"; };
-		7BECFD8C230E654A00C86714 /* SearchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableCell.swift; sourceTree = "<group>"; };
 		B5004A048FD33600F6C700FD /* Pods-MyMiniMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMiniMap.release.xcconfig"; path = "Target Support Files/Pods-MyMiniMap/Pods-MyMiniMap.release.xcconfig"; sourceTree = "<group>"; };
 		EDD220BD71CF7D7E54199782 /* Pods_MyMiniMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMiniMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -208,8 +200,6 @@
 				7B52C78C22F4357F00124788 /* SearchResultsController.swift */,
 				7BB8359822FE7687001FC748 /* SaveRestaurantViewController.swift */,
 				7BECFCC82309118200C86714 /* MyFeedViewController.swift */,
-				7BECFCCC230A504800C86714 /* MapContainerViewController.swift */,
-				7BECFCCA230A42F400C86714 /* FeedContainerViewController.swift */,
 				7B78EC5D22D83FFE00E97F27 /* Assets.xcassets */,
 				7BB8359322FD34DC001FC748 /* Main.storyboard */,
 				7B78EC5F22D83FFE00E97F27 /* LaunchScreen.storyboard */,
@@ -219,8 +209,6 @@
 				7BECFD84230A6A8C00C86714 /* FullFeedViewController.swift */,
 				7BECFD86230A7B3900C86714 /* ItemCollectionViewCell.swift */,
 				7BECFD87230A7B3900C86714 /* ItemCollectionViewCell.xib */,
-				7BECFD8A230E643900C86714 /* SearchViewController.swift */,
-				7BECFD8C230E654A00C86714 /* SearchTableCell.swift */,
 				7BE2CF77232207F600FF8767 /* TimeLineTableViewController.swift */,
 				7B3A958C2328F2F000A92AF0 /* SEQ_OwnerViewController.swift */,
 			);
@@ -484,15 +472,11 @@
 			files = (
 				7B52C76622F40F5400124788 /* MiniMapViewController.swift in Sources */,
 				7BB8359722FD359B001FC748 /* test1.swift in Sources */,
-				7BECFD8D230E654A00C86714 /* SearchTableCell.swift in Sources */,
 				7B52C78F22F43FE400124788 /* test.swift in Sources */,
 				7BBBA72922F1867A008CF86C /* UserJoinController.swift in Sources */,
-				7BECFCCD230A504800C86714 /* MapContainerViewController.swift in Sources */,
-				7BECFCCB230A42F400C86714 /* FeedContainerViewController.swift in Sources */,
 				7BECFCC92309118200C86714 /* MyFeedViewController.swift in Sources */,
 				7B3A958D2328F2F000A92AF0 /* SEQ_OwnerViewController.swift in Sources */,
 				7BB8359922FE7687001FC748 /* SaveRestaurantViewController.swift in Sources */,
-				7BECFD8B230E643900C86714 /* SearchViewController.swift in Sources */,
 				7B78EC5922D83FFC00E97F27 /* ViewController.swift in Sources */,
 				7BECFD85230A6A8C00C86714 /* FullFeedViewController.swift in Sources */,
 				7BE2CF78232207F600FF8767 /* TimeLineTableViewController.swift in Sources */,

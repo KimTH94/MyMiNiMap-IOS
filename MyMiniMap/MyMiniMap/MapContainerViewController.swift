@@ -103,6 +103,7 @@ class MapContainerViewController: UIViewController, GMSMapViewDelegate{
 
         }
         task.resume()
+        
         mapView.delegate = self as GMSMapViewDelegate
     }
     

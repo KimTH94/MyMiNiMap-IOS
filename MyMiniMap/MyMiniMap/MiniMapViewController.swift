@@ -19,7 +19,9 @@ class MiniMapViewController: UIViewController, CLLocationManagerDelegate {
     var longitude: String = ""
     var address: String = ""
     var id: String = ""
+    
     var locationManager = CLLocationManager()
+    
     lazy var mapView = GMSMapView()
     
     override func viewDidLoad() {
@@ -31,22 +33,15 @@ class MiniMapViewController: UIViewController, CLLocationManagerDelegate {
         let camera = GMSCameraPosition.camera(withLatitude: Latitude, longitude: longitude, zoom: 17.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.settings.myLocationButton = true
+        
         view = mapView
-        
-        // Creates a marker in the center of the map.
-//        let marker = GMSMarker()
-//        marker.position = CLLocationCoordinate2D(latitude: Latitude, longitude: longitude)
-//        marker.title = "안녕 "
-//        marker.snippet = "태환"
-//        marker.map = mapView
-        
+
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
         
         print("SEQ_User : \(UserDefaults.standard.integer(forKey: "SEQ_User"))")
-
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -63,6 +58,7 @@ class MiniMapViewController: UIViewController, CLLocationManagerDelegate {
     
     // Present the Autocomplete view controller when the button is pressed.
     @IBAction func autocompleteClicked(_ sender: UIBarButtonItem) {
+        print("adfsd")
         let autocompleteController = GMSAutocompleteViewController()
         autocompleteController.delegate = self
         

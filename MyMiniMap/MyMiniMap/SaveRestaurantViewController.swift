@@ -1239,12 +1239,6 @@ class SaveRestaurantViewController: UIViewController, UITextFieldDelegate {
                 vc.SEQ_Owner = UserDefaults.standard.integer(forKey: "SEQ_User")
             }
         }
-        
-        if segue.identifier == "goPhoto" {
-            if let sc = segue.destination as? FeedContainerViewController {
-                sc.SEQ_Owner = UserDefaults.standard.integer(forKey: "SEQ_User")
-            }
-        }
     }
 }
 
