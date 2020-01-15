@@ -29,19 +29,19 @@
   - SDWebImage
   
 - 데이터 베이스 설계도
-![데이터베이스](http://112.149.7.38:8090/Final_Minimap/php/minidb.png)
+![데이터베이스](http://myminimap.kr/kim/minidb.png)
 - <h3>메인 기능 소개</h3>
   - 로그인 <br>
-![기능1](http://112.149.7.38:8090/Final_Minimap/php/mj.gif)
+![기능1](http://myminimap.kr/kim/mj.gif)
   - 저장 <br>
-![기능2](http://112.149.7.38:8090/Final_Minimap/php/ms.gif)
+![기능2](http://myminimap.kr/kim/ms.gif)
   - 타임라인 및 사용자 검색 <br>
-![기능3](http://112.149.7.38:8090/Final_Minimap/php/msearch.gif)
+![기능3](http://myminimap.kr/kim/msearch.gif)
 
   - 내피드(지도) <br>
-![기능4](http://112.149.7.38:8090/Final_Minimap/php/mfm.gif)
+![기능4](http://myminimap.kr/kim/mfm.gif)
   - 내피드(피드) <br>
-![기능4](http://112.149.7.38:8090/Final_Minimap/php/mf.gif)
+![기능4](http://myminimap.kr/kim/mf.gif)
 
 - 참고 사항 <br>
   - 아직 진행중인 프로젝트입니다.
